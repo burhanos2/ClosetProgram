@@ -1,13 +1,9 @@
-// StartCalc.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
-
 #include "pch.h"
+#include "StartCalc.h"
 #include <iostream>
-#include <string>
 #include "Calculator.h"
 
-int StartCalc()
+void Calc()
 {
 	using namespace std;
 	float _a;
@@ -53,6 +49,12 @@ int StartCalc()
 	default:
 		break;
 	}
+}
 
-	return 0;
+StartCalc::StartCalc()
+{
+}
+
+StartCalc::~StartCalc()
+{
 }

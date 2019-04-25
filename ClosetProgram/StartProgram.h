@@ -4,5 +4,7 @@ class StartProgram
 public:
 	StartProgram();
 	~StartProgram();
+private:
+
 };
 

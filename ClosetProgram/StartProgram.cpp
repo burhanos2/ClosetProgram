@@ -11,9 +11,3 @@ StartProgram::StartProgram()
 StartProgram::~StartProgram()
 {
 }
-
-int main()
-{
-
-
-}
