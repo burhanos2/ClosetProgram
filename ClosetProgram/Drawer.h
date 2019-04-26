@@ -8,7 +8,9 @@ public:
 	Drawer();
 	~Drawer();
 
-	Drawer(int& _capacity, float& _sizeX, float& _sizeY, float& _sizeZ, std::string& _color);
+	Drawer(const int& _capacity, 
+			const float& _sizeX, const float& _sizeY, const float& _sizeZ,
+			const std::string& _color);
 
 	float sizeX;
 	float sizeY;

@@ -11,7 +11,7 @@ Closet::~Closet()
 {
 }
 
-Closet::Closet(int& _capacity, float& _sizeX, float& _sizeY, float& _sizeZ, std::string& _color, float& _locX, float& _locY, float& _locZ)
+Closet::Closet(const int& _capacity, const float& _sizeX, const float& _sizeY, const float& _sizeZ, const std::string& _color, const float& _locX, const float& _locY, const float& _locZ)
 {
 	sizeX = _sizeX;
 	sizeY = _sizeY;
@@ -23,4 +23,6 @@ Closet::Closet(int& _capacity, float& _sizeX, float& _sizeY, float& _sizeZ, std:
 	locationX = _locX;
 	locationY = _locY;
 	locationZ = _locZ;
+
+	_drawers.resize(capacity);
 }
