@@ -3,7 +3,7 @@
 #include <iostream>
 #include "Calculator.h"
 
-void Calc()
+void StartCalc::Calc()
 {
 	using namespace std;
 	float _a;

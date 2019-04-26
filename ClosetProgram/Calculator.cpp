@@ -11,6 +11,7 @@ Calculator::~Calculator()
 {
 }
 
+#pragma region functions
 float Calculator::Plus(float& a, float& b)
 {
 	return a + b;
@@ -53,5 +54,6 @@ float Calculator::SquareRoot(float& a)
 {
 	return sqrt(a);
 }
+#pragma endregion
 
 

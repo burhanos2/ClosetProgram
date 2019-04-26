@@ -1,29 +1,24 @@
 #pragma once
 #include <string>
+#include <list>
 
-class Drawer 
+class Drawer
 {
 public:
 	Drawer();
 	~Drawer();
 
-	Drawer(int _capacity, std::string _color);
+	Drawer(int& _capacity, float& _sizeX, float& _sizeY, float& _sizeZ, std::string& _color);
 
-	void ShowContents();
-
-	void SetSizeX(float sizeOfClosetX, int closetCap);
-	void SetSizeY(float sizeOfClosetY, int closetCap);
-	void SetSizeZ(float sizeOfClosetZ, int closetCap);
-	
-private:
 	float sizeX;
 	float sizeY;
 	float sizeZ;
-
-	//enum Color {red, blue, green, yellow, white, black, orange, purple};
-	std::string currentColor;
 	int capacity;
+	std::string color;
 
 
+	std::list<std::string> _contents;
+		
+	void ShowContents();
 };
 

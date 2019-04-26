@@ -5,6 +5,5 @@ public:
 	Person();
 	~Person();
 
-	enum PersonType {teacher, student, parent};
 };
 

@@ -5,6 +5,5 @@ public:
 	Object();
 	~Object();
 
-	enum objectType {watch, jewelry };
 };
 

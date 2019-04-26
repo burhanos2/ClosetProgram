@@ -6,36 +6,20 @@ Drawer::Drawer()
 {
 }
 
-Drawer::Drawer(int _capacity, std::string _color)
-{
-	currentColor = _color;
-	capacity = _capacity;
-}
-
-
 
 Drawer::~Drawer()
 {
 }
 
+Drawer::Drawer(int& _capacity, float& _sizeX, float& _sizeY, float& _sizeZ, std::string& _color)
+{
+	sizeX = _sizeX;
+	sizeY = _sizeY;
+	sizeZ = _sizeZ;
+	capacity = _capacity;
+	color = _color;
+}
+
 void Drawer::ShowContents()
 {
-
 }
-
-#pragma region setters
-void Drawer::SetSizeX(float sizeOfClosetX, int closetCap)
-{
-	sizeX = sizeOfClosetX / closetCap;
-}
-
-void Drawer::SetSizeY(float sizeOfClosetY, int closetCap)
-{
-	sizeY = sizeOfClosetY / closetCap;
-}
-
-void Drawer::SetSizeZ(float sizeOfClosetZ, int closetCap)
-{
-	sizeZ = sizeOfClosetZ / closetCap;
-}
-#pragma endregion

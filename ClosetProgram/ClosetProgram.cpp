@@ -6,15 +6,15 @@
 //own library includes
 #include "Closet.h"
 #include "Drawer.h"
-#include "Clothing.h"
-#include "Person.h"
+
 
 int main()
 {
-	//Closet _closet(4);
-	
+	std::string color1 = "white";
+	std::string color2 = "blue";
+	Closet _closet1(6, 5.0f, 5.0f, 5.0f, color1, 1.0f, 1.0f, 1.0f);
+	Closet _closet2(4);
 
-	//std::cout << _closet.GetSize();
 	return 0;
 }
 
