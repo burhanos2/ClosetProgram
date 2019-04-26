@@ -1,11 +1,13 @@
 #pragma once
 #include <string>
 
-class Drawer
+class Drawer 
 {
 public:
-	Drawer(int _capacity, std::string _color);
+	Drawer();
 	~Drawer();
+
+	Drawer(int _capacity, std::string _color);
 
 	void ShowContents();
 

@@ -2,11 +2,17 @@
 #include "Drawer.h"
 
 
+Drawer::Drawer()
+{
+}
+
 Drawer::Drawer(int _capacity, std::string _color)
 {
 	currentColor = _color;
 	capacity = _capacity;
 }
+
+
 
 Drawer::~Drawer()
 {

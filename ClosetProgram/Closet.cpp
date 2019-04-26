@@ -19,6 +19,8 @@ Closet::Closet(int _capacity, float _sizeX, float _sizeY, float _sizeZ, std::str
 	drawers.resize(capacity);
 }
 
+Closet::Closet()
+{}
 Closet::~Closet()
 {
 }

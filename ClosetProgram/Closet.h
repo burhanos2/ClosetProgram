@@ -5,7 +5,17 @@
 class Closet
 {
 public:
-	
+	Closet();
+	~Closet();
+
+	Closet(
+		int _capacity,
+		float _sizeX, float _sizeY, float _sizeZ,
+		std::string _color,
+		float _locationX, float _locationY, float _locationZ
+	);
+
+
 	bool Open();
 	bool Close();
 
@@ -24,15 +34,6 @@ public:
 	void SelectDrawer(int i);
 
 private:
-	Closet(
-		int _capacity,
-		float _sizeX, float _sizeY, float _sizeZ,
-		std::string _color,
-		float _locationX, float _locationY, float _locationZ
-	);
-	~Closet();
-
-
 	bool isOpen;	
 	std::list<Drawer> Drawers{};
 	float locationX;
