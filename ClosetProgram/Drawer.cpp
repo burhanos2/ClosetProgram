@@ -18,10 +18,12 @@ Drawer::Drawer(const int& _capacity, const float& _sizeX, const float& _sizeY, c
 	sizeZ = _sizeZ;
 	capacity = _capacity;
 	color = _color;
-
-	_contents.resize(capacity);
 }
 
 void Drawer::ShowContents()
+{
+}
+
+void Drawer::FillDrawer()
 {
 }

@@ -26,7 +26,8 @@ public:
 	float locationY;
 	float locationZ;
 
-	std::list<Drawer> _drawers;
+	std::list<Drawer> drawers;
 
+	void FillCloset(int drawerCapacity, std::string drawerColor);
 };
 

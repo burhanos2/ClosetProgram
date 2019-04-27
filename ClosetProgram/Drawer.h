@@ -19,8 +19,10 @@ public:
 	std::string color;
 
 
-	std::list<std::string> _contents;
-		
+	std::list<std::string> contents; // for sokken la, contents = socks
+
 	void ShowContents();
+
+	void FillDrawer();
 };
 

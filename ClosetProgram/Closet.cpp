@@ -23,6 +23,14 @@ Closet::Closet(const int& _capacity, const float& _sizeX, const float& _sizeY, c
 	locationX = _locX;
 	locationY = _locY;
 	locationZ = _locZ;
+}
 
-	_drawers.resize(capacity);
+void Closet::FillCloset(int drawerCapacity, std::string drawerColor)
+{
+	for (int i = (capacity - 1); i >= 0; i--)
+	{
+		Drawer drawer(drawerCapacity, (sizeX / capacity), (sizeY / capacity), (sizeZ / capacity), drawerColor); // int cap, float x, float y ,float z, string color
+		drawers.push_back(drawer);
+	}
+	drawers.resize(capacity);
 }
