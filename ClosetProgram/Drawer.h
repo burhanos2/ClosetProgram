@@ -23,6 +23,8 @@ public:
 
 	void ShowContents();
 
-	void FillDrawer();
+
+private:
+	std::list<std::string>::iterator it;
 };
 

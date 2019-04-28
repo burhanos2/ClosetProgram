@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "Closet.h"
 
-
 Closet::Closet()
 {
 }
@@ -25,11 +24,12 @@ Closet::Closet(const int& _capacity, const float& _sizeX, const float& _sizeY, c
 	locationZ = _locZ;
 }
 
-void Closet::FillCloset(int drawerCapacity, std::string drawerColor)
+void Closet::FillCloset(int drawerCapacity, std::string drawerColor, std::vector<std::string> _contentOfDrawer)
 {
-	for (int i = (capacity - 1); i >= 0; i--)
+	for (int i = 0; i < capacity; i++)
 	{
 		Drawer drawer(drawerCapacity, (sizeX / capacity), (sizeY / capacity), (sizeZ / capacity), drawerColor); // int cap, float x, float y ,float z, string color
+		drawer.contents.push_back (_contentOfDrawer.at(i));
 		drawers.push_back(drawer);
 	}
 	drawers.resize(capacity);

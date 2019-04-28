@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <list>
+#include <vector>
 #include "Drawer.h"
 
 class Closet
@@ -28,6 +29,6 @@ public:
 
 	std::list<Drawer> drawers;
 
-	void FillCloset(int drawerCapacity, std::string drawerColor);
+	void FillCloset(int drawerCapacity, std::string drawerColor, std::vector<std::string> _contentOfDrawer);
 };
 
